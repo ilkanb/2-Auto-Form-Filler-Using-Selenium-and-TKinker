@@ -74,7 +74,7 @@ class WebAutomation:
 
 if __name__ == "__main__":
     webautomation = WebAutomation()
-    webautomation.login('ilkanb','Kokarcorap12.3$')
-    webautomation.fill_form("Jonh Smith","john@example.com","Address1","address2")
+    webautomation.login('USER_NAME','USER_PASSWORD')
+    webautomation.fill_form("John Smith","john@example.com","Address1","address2")
     webautomation.download()
     webautomation.close()
