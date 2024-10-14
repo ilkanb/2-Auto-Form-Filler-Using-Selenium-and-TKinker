@@ -73,8 +73,10 @@ class WebAutomation:
 
 
 if __name__ == "__main__":
+    user_name = os.getenv("SELENIUM_NAME")
+    user_password = os.getenv("SELENIUM_PASSWORD")
     webautomation = WebAutomation()
-    webautomation.login('USER_NAME','USER_PASSWORD')
+    webautomation.login(user_name, user_password)
     webautomation.fill_form("John Smith","john@example.com","Address1","address2")
     webautomation.download()
     webautomation.close()
